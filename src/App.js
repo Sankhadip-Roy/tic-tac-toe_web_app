@@ -1,13 +1,11 @@
 import { useState } from 'react';
-import {
-  Container, Row, Col, Form, Input, Button, Navbar, Nav,
-  NavbarBrand, NavLink, NavItem, UncontrolledDropdown,
-  DropdownToggle, DropdownMenu, DropdownItem
-} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap'
+
 let ifDraw = 0;
 function Square({ value, onSquareClick }) {
   return (
-    <Button color="success" className="square btn btn-outline-info" onClick={onSquareClick}>
+    <Button className="square btn btn-outline-info btn-light" onClick={onSquareClick}>
       {value}
     </Button>
   );

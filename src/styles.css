@@ -60,12 +60,12 @@ body {
   font-size: 44px;
   font-weight: bold;
   line-height: 94px;
-  height: 15vh;
+  height: 2em;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 7vw;
+  width: 2em;
 }
 
 .board-row:after {

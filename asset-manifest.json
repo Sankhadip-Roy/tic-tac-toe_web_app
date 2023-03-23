@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/calculator_web_app/static/css/main.74acce42.css",
-    "main.js": "/calculator_web_app/static/js/main.dc9633cd.js",
-    "index.html": "/calculator_web_app/index.html",
-    "main.74acce42.css.map": "/calculator_web_app/static/css/main.74acce42.css.map",
-    "main.dc9633cd.js.map": "/calculator_web_app/static/js/main.dc9633cd.js.map"
+    "main.css": "/tic-tac-toe_web_app/static/css/main.74acce42.css",
+    "main.js": "/tic-tac-toe_web_app/static/js/main.dc9633cd.js",
+    "index.html": "/tic-tac-toe_web_app/index.html",
+    "main.74acce42.css.map": "/tic-tac-toe_web_app/static/css/main.74acce42.css.map",
+    "main.dc9633cd.js.map": "/tic-tac-toe_web_app/static/js/main.dc9633cd.js.map"
   },
   "entrypoints": [
     "static/css/main.74acce42.css",

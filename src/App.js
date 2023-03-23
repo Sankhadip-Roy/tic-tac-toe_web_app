@@ -1,10 +1,15 @@
 import { useState } from 'react';
+import {
+  Container, Row, Col, Form, Input, Button, Navbar, Nav,
+  NavbarBrand, NavLink, NavItem, UncontrolledDropdown,
+  DropdownToggle, DropdownMenu, DropdownItem
+} from 'reactstrap';
 let ifDraw = 0;
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    <Button color="success" className="square btn btn-outline-info" onClick={onSquareClick}>
       {value}
-    </button>
+    </Button>
   );
 }
 
@@ -39,12 +44,9 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className="status"><h3>{status}</h3></div>
       <div className="board-row">
-        <div>
-
-          <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-        </div>
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
       </div>

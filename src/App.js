@@ -29,7 +29,7 @@ function Board({ xIsNext, squares, onPlay }) {
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
-    if (ifDraw == 9) {
+    if (ifDraw == 9 && winner == null) {
       status = "Draw";
     }
     else {
@@ -41,7 +41,10 @@ function Board({ xIsNext, squares, onPlay }) {
     <>
       <div className="status">{status}</div>
       <div className="board-row">
-        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+        <div>
+
+          <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+        </div>
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
       </div>
@@ -78,9 +81,9 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = 'Move ' + move;
     } else {
-      description = 'Go to game start';
+      description = 'Game start';
     }
     return (
       <li key={move}>

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Sankhadip-Roy.github.io/calculator_web_app",
+  "homepage": "http://Sankhadip-Roy.github.io/tic-tac-toe_web_app",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
